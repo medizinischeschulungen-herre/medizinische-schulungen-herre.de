@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kurse – Reinhold Herre</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--text:#0f172a;--muted:#475569;--brand:#2da5ff;--brand2:#1c74d8;--line:#dbe5f2;--radius:18px;--max:1100px;--pad:18px;--shadow:0 10px 30px rgba(2,8,23,.08);}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    a{color:inherit;text-decoration:none} .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
+    header{position:sticky;top:0;backdrop-filter:blur(10px);background:rgba(246,248,251,.82);border-bottom:1px solid var(--line)}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:900}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff}
+    nav{display:flex;gap:8px;flex-wrap:wrap}
+    .nav{padding:10px 12px;border-radius:12px;color:var(--muted);font-weight:700}
+    .nav:hover{background:#eef6ff;color:#0b3a73}
+    .cta{padding:12px 14px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;font-weight:900}
+    main{padding:22px 0 34px}
+    h1{margin:8px 0 8px;font-size:clamp(26px,4vw,40px)}
+    p{color:var(--muted);line-height:1.6;margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:#0b3a73;font-weight:900;font-size:.9rem}
+    .price{font-weight:900}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:14px;font-weight:900;border:1px solid var(--line);background:#fff}
+    .btn:hover{background:#f3f7ff}
+    .btn.primary{border:none;color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .hint{background:#fff;border:1px dashed #bcd7ff;border-radius:16px;padding:14px}
+    footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand"><div class="logo">EH</div> Reinhold Herre</div>
+    <nav>
+      <a class="nav" href="index.html">Start</a>
+      <a class="nav" href="kurse.html">Kurse</a>
+      <a class="nav" href="termine.html">Termine</a>
+      <a class="nav" href="ueber.html">Über</a>
+      <a class="nav" href="kontakt.html">Kontakt</a>
+      <a class="cta" href="termine.html">Buchen</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Kursangebote</h1>
+  <p>Hier findest du die Kursarten. Die <b>aktuellen Termine</b> und Buchung findest du auf der Seite <a href="termine.html"><b>Termine</b></a>.</p>
+
+  <div class="grid">
+    <section class="card">
+      <span class="tag">Standard</span>
+      <h2 style="margin:10px 0 6px">Erste Hilfe (Grundkurs)</h2>
+      <p>Für Führerschein, privat oder als Auffrischung. Praxisnah mit Übungen.</p>
+      <div class="row">
+        <a class="btn primary" href="termine.html">Termin ansehen</a>
+        <a class="btn" href="kontakt.html">Anfragen</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="tag">Betrieb / Verein</span>
+      <h2 style="margin:10px 0 6px">Gruppenschulung vor Ort</h2>
+      <p>Schulung direkt in deinem Betrieb/Verein (nach Absprache, auch mehrere Termine möglich).</p>
+      <div class="row">
+        <a class="btn primary" href="kontakt.html">Angebot anfragen</a>
+        <a class="btn" href="termine.html">Termine</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="tag">Auffrischung</span>
+      <h2 style="margin:10px 0 6px">Refresh / Wiederholung</h2>
+      <p>Ideal, wenn dein Kurs schon länger her ist: Notruf, stabile Seitenlage, Reanimation usw.</p>
+      <div class="row">
+        <a class="btn primary" href="termine.html">Termin ansehen</a>
+        <a class="btn" href="kontakt.html">Anfragen</a>
+      </div>
+    </section>
+  </div>
+
+  <div style="height:16px"></div>
+
+  
+</main>
+
+<footer>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>Kontakt: Reinhold Herre · 0178 2139345 · Ellwangen</div>
+      <div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
