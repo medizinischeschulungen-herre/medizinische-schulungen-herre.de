@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – Reinhold Herre</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--text:#0f172a;--muted:#475569;--brand:#2da5ff;--brand2:#1c74d8;--line:#dbe5f2;--radius:18px;--max:900px;--pad:18px;--shadow:0 10px 30px rgba(2,8,23,.08);}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    a{color:inherit;text-decoration:none} .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
+    header{border-bottom:1px solid var(--line);background:#fff}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
+    nav{display:flex;gap:8px;flex-wrap:wrap}
+    .nav{padding:10px 12px;border-radius:12px;color:var(--muted);font-weight:800}
+    .nav:hover{background:#eef6ff;color:#0b3a73}
+    main{padding:22px 0 34px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    label{display:block;font-weight:900;margin:10px 0 6px}
+    input, textarea{width:100%;padding:12px;border-radius:14px;border:1px solid var(--line);font:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:14px;font-weight:900;border:1px solid var(--line);background:#fff}
+    .btn.primary{border:none;color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+    .btn:hover{background:#f3f7ff}
+    .btn.primary:hover{filter:brightness(1.02)}
+    .muted{color:var(--muted);line-height:1.6}
+    footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div style="font-weight:950">Kontakt</div>
+    <nav>
+      <a class="nav" href="index.html">Start</a>
+      <a class="nav" href="kurse.html">Kurse</a>
+      <a class="nav" href="termine.html">Termine</a>
+      <a class="nav" href="ueber.html">Über</a>
+      <a class="nav" href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 style="margin:0 0 10px">Kontakt aufnehmen</h1>
+  <p class="muted" style="margin:0 0 14px">
+    Reinhold Herre · Hammermühle 1 · 73479 Ellwangen · Telefon: <b>0178 2139345</b>
+  </p>
+
+  <section class="card">
+    <h2 style="margin:0 0 8px">Nachricht per E-Mail</h2>
+    <p class="muted" style="margin:0 0 10px">Das Formular öffnet dein Mail-Programm.</p>
+
+    <form action="mailto:medizinische.schulungen.herre@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input id="name" name="Name" placeholder="Vorname Nachname" required />
+
+      <label for="mail">E-Mail</label>
+      <input id="mail" name="E-Mail" placeholder="name@mail.de" required />
+
+      <label for="msg">Nachricht</label>
+      <textarea id="msg" name="Nachricht" placeholder="Worum geht es? Teilnehmerzahl, Wunschdatum, Ort ..."></textarea>
+
+      <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap">
+        <button class="btn primary" type="submit">E-Mail erstellen</button>
+        <a class="btn" href="tel:01782139345">Anrufen</a>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+    <div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
+    <div>© Reinhold Herre</div>
+  </div>
+</footer>
+</body>
+</html>
